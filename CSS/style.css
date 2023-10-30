@@ -1,0 +1,29 @@
+/* Custom Properties */
+
+/* Color Pallete */
+:root {
+  --black: #000000ff;
+  --ebony: #5a6650ff;
+  --non-photo-blue: #a7e2e3ff;
+  --argentinian-blue: #73bafcff;
+  --white-smoke: #f6f5f5ff;
+}
+
+#indexText {
+  margin: auto;
+}
+
+.indexText {
+  font-size: 8rem;
+  text-shadow: 2rem 2rem #0000001f;
+}
+
+.tab1 {
+  margin-left: 6rem;
+  margin-right: 0;
+}
+
+.tab2 {
+  margin-left: 18rem;
+  margin-right: 0;
+}
