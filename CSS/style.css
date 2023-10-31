@@ -9,6 +9,10 @@
   --white-smoke: #f6f5f5ff;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #indexText {
   margin: auto;
 }
