@@ -52,3 +52,7 @@ body {
 #scroll::-webkit-scrollbar {
   display: none;
 }
+
+#reason {
+  height: 450px;
+}
