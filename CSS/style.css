@@ -71,6 +71,12 @@ body {
   text-align-last: auto;
 }
 
+#skillsBlock {
+  border-radius: 30px;
+  border: double 10px blue;
+  margin-bottom: 3rem;
+}
+
 #navLinks {
   margin: auto;
   padding: 0;
