@@ -9,6 +9,10 @@
   --white-smoke: #f6f5f5ff;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #indexText {
   margin: auto;
 }
@@ -19,12 +23,12 @@
 }
 
 .tab1 {
-  margin-left: 6rem;
+  margin-left: 4%;
   margin-right: 0;
 }
 
 .tab2 {
-  margin-left: 18rem;
+  margin-left: 10%;
   margin-right: 0;
 }
 
@@ -32,6 +36,15 @@
   width: 25rem;
   height: 25rem;
   margin: 4rem auto;
+}
+
+.br {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+#reason {
+  height: 450px;
 }
 
 #skillsBlock {
@@ -52,4 +65,14 @@
   width: 20rem;
   height: 25rem;
   text-align-last: auto;
+
+#scroll {
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#scroll::-webkit-scrollbar {
+  display: none;
 }
