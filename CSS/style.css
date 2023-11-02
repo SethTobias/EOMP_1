@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+#pageHeadings {
+  padding-top: 6%;
+}
+
 #indexText {
   margin: auto;
 }
