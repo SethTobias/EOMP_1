@@ -34,6 +34,22 @@
   margin: 4rem auto;
 }
 
-#paragraph2 {
-  margin-top: 15rem;
+#skillsBlock {
+  margin: 0 auto;
+}
+
+#skillsNav a {
+  text-decoration: none;
+}
+
+#skillsGif {
+  width: 20rem;
+}
+
+#skillsBox {
+  border-radius: 30px;
+  border: solid 5px blue;
+  width: 20rem;
+  height: 25rem;
+  text-align-last: auto;
 }
