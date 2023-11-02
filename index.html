@@ -27,65 +27,56 @@
     <title>SethTobias_Portfolio</title>
   </head>
   <body>
-    <header>
       <!-- Bookmark to the top -->
       <a name="top"></a>
       <!-- Start of top nav bar -->
-      <nav class="container-fluid navbar-brand bg-dark">
+      <nav class="container-fluid navbar-brand bg-dark sticky-top">
         <div class="row container-fluid">
-          <div class="col-sm-1 container-fluid img-fluid">
-            <a href="#">
+          <div class="col-sm-1 container-fluid img-fluid float-start">
+            <a href="#about">
               <img
                 src="https://i.postimg.cc/FRjfYgn1/IMG-20220408-WA0002_2.jpg"
                 alt=""
                 class="img-fluid float-start rounded-circle"
+                id="aboutLink"
               />
             </a>
           </div>
 
-          <div class="col-sm-2 img-fluid">
-            <a href="#">
-              <img
-                src="https://i.postimg.cc/vB30zXZC/placeholder.png"
-                alt=""
-                class="img-fluid nav-item"
-              />
-            </a>
+          <div class="col-6">
+            <div class="row m-auto mt-auto mb-auto">
+              <div class="col-4 text-center" id="navLinks">
+                <p>
+                  <a href="#index">Index</a>
+                </p>
+              </div>
+              <div class="col-4 text-center" id="navLinks">
+                <p>
+                  <a href="#skills">Skills</a>
+                </p>
+                
+              </div>
+              <div class="col-4 text-center align-text-bottom" id="navLinks">
+                <p>
+                  <a href="#experience">Experience</a>
+                </p>
+                
+              </div>
+      
+            </div>
           </div>
-          <div class="col-sm-2 img-fluid">
-            <a href="#">
-              <img
-                src="https://i.postimg.cc/vB30zXZC/placeholder.png"
-                alt=""
-                class="img-fluid nav-item"
-              />
-            </a>
-          </div>
-          <div class="col-sm-2 img-fluid">
-            <a href="#">
-              <img
-                src="https://i.postimg.cc/vB30zXZC/placeholder.png"
-                alt=""
-                class="img-fluid nav-item"
-              />
-            </a>
-          </div>
-          <div class="col-2">
-            <a href="#">
-              <img
-                src="https://i.postimg.cc/pTpssz5T/lc-Academy.webp"
-                alt=""
-                class="img-fluid float-end nav-item"
-              />
+          <div class="col-2 m-auto">
+            <a href="#bottom">
+              <i class="fa-solid fa-arrow-down fa-xl" style="color: #ffffff;"></i>
             </a>
           </div>
         </div>
       </nav>
       <!-- End of top nav bar -->
-    </header>
     <main class="container-fluid">
       <!-- Start of index page -->
       <section class="container-fluid m-3 border-bottom" id="index">
+        <a name="Index"></a>
         <div class="row">
           <div class="col-4 d-block">
             <img
@@ -112,6 +103,7 @@
       <!-- end of index page -->
       <!-- Start of about page -->
       <section class="container-fluid border-bottom" id="about">
+        <a name="about"></a>
         <div class="container-fluid row">
           <div class="col-4 container-fluid border mb-auto mt-auto">
             <div class="text-start">
@@ -185,6 +177,7 @@
       <!-- End of about page -->
       <!-- Start of skills page -->
       <section class="container-fluid border-bottom" id="skills">
+        <a name="skills"></a>
         <div class="container-fluid">
           <h2 class="text-center" id="languages">Languages</h2>
           <nav class="navbar" id="skillsNav">
@@ -199,7 +192,6 @@
             <a href="#Python">Python</a>
             <a href="#Java">Java</a>
           </nav>
-          <!-- Start of HTML -->
           <!-- Start of HTML -->
           <a name="HTML"></a>
           <div class="row container p-5" id="skillsBlock">
@@ -227,6 +219,7 @@
           </div>
           <!-- End of HTML -->
           <!-- Start of CSS -->
+          <a name="CSS"></a>
           <div class="row container p-5" id="skillsBlock">
             <div class="col-3">
               <h3>CSS</h3>
@@ -252,6 +245,7 @@
           </div>
           <!-- End of CSS -->
           <!-- Start of JavaScript -->
+          <a name="JavaScript"></a>
           <div class="row container p-5" id="skillsBlock">
             <div class="col-3">
               <h3>JavaScript</h3>
@@ -277,6 +271,7 @@
           </div>
           <!-- End of JavaScript -->
           <!-- Start of MySQL -->
+          <a name="MySQL"></a>
           <div class="row container p-5" id="skillsBlock">
             <div class="col-3">
               <h3>MySQL</h3>
@@ -302,6 +297,7 @@
           </div>
           <!-- End of MySQL -->
           <!-- Start of C -->
+          <a name="C"></a>
           <div class="row container p-5" id="skillsBlock">
             <div class="col-3">
               <h3>C</h3>
@@ -327,6 +323,7 @@
           </div>
           <!-- End of C -->
           <!-- Start of C++ -->
+          <a name="Cpp"></a>
           <div class="row container p-5" id="skillsBlock">
             <div class="col-3">
               <h3>C++</h3>
@@ -352,6 +349,7 @@
           </div>
           <!-- End of C++ -->
           <!-- Start of C# -->
+          <a name="Csharp"></a>
           <div class="row container p-5" id="skillsBlock">
             <div class="col-3">
               <h3>C#</h3>
@@ -377,6 +375,7 @@
           </div>
           <!-- End of C# -->
           <!-- Start of PHP -->
+          <a name="PHP"></a>
           <div class="row container p-5" id="skillsBlock">
             <div class="col-3">
               <h3>PHP</h3>
@@ -402,6 +401,7 @@
           </div>
           <!-- End of PHP -->
           <!-- Start of Phython -->
+          <a name="Python"></a>
           <div class="row container p-5" id="skillsBlock">
             <div class="col-3">
               <h3>Phython</h3>
@@ -427,6 +427,7 @@
           </div>
           <!-- End of Phython -->
           <!-- Start of Java  -->
+          <a name="Java"></a>
           <div class="row container p-5" id="skillsBlock">
             <div class="col-3">
               <h3>Java</h3>
@@ -531,6 +532,7 @@
       <!-- End of skills page -->
       <!-- Start of experience page -->
       <section class="container-fluid border-bottom" id="experience">
+        <a name="experience"></a>
         <div class="container-fluid">
           <table class="table table-hover table-responsive table-striped">
             <thead class="">
@@ -644,6 +646,7 @@
       <!-- End of experience page -->
       <!-- Start of projects page-->
       <section class="container-fluid border-bottom" id="projects">
+        <a name="projects"></a>
         <div class="row container-fluid ">
           <div class="col-4">
             <a href=""><h3>Calculator</h3></a>
@@ -689,6 +692,7 @@
       <!-- End of projects page -->
             <!-- Start of testimonials page -->
             <section class="container-fluid border-bottom">
+              <a name="testimonials"></a>
               <h2>Family and Friends</h2>
               <div class="row mt-5">
                 <div class="card m-auto" style="max-width: 540px;">
@@ -789,6 +793,7 @@
             <!-- End of testimonials page -->
             <!-- Start of contact page --->
       <section class="container-fluid border-bottom" id="contact">
+<a name="contact"></a>
         <h1>How to get in contact?</h1>
         <p>To reach me simply complete the below form or simply click on the icons below the form to take you to the respective pages.</p>
         <div class="container m-auto">
@@ -873,46 +878,38 @@
       </div>
       </section>
       <!-- End of contact page -->
-
-    </main>
-    <!-- Footer area of page -->
-    <footer>
-      <!-- Footer navbar -->
-      <nav class="container-fluid navbar-brand bg-dark">
-        <div class="row container-fluid">
+      <!-- Bottom navbar -->
+      <nav class="container-fluid navbar-brand bg-dark sticky-bottom">
+        <div class="row container-fluid m-auto">
           <div class="col-2 container-fluid text-danger">
             <h4><span>Developed by </span><span>Seth Tobias</span></h4>
             <h6>Icons by Icons8.</h6>
           </div>
-
-          <div class="col-sm-2 container-fluid img-fluid">
-            <a href="#">
-              <img
-                src="https://i.postimg.cc/vB30zXZC/placeholder.png"
-                alt=""
-                class="img-fluid nav-item"
-              />
-            </a>
+      
+          <div class="col-6">
+            <div class="row m-auto mt-auto mb-auto">
+              <div class="col-4 text-center" id="navLinks">
+                <p>
+                  <a href="#projects">Projects</a>
+                </p>
+              </div>
+              <div class="col-4 text-center" id="navLinks">
+                <p>
+                  <a href="#testimonials">Testimonials</a>
+                </p>
+                
+              </div>
+              <div class="col-4 text-center align-text-bottom" id="navLinks">
+                <p>
+                  <a href="#contact">Contact</a>
+                </p>
+                
+              </div>
+      
+            </div>
           </div>
-          <div class="col-sm-2 container-fluid img-fluid">
-            <a href="#">
-              <img
-                src="https://i.postimg.cc/vB30zXZC/placeholder.png"
-                alt=""
-                class="img-fluid nav-img"
-              />
-            </a>
-          </div>
-          <div class="col-sm-2 container-fluid img-fluid">
-            <a href="#">
-              <img
-                src="https://i.postimg.cc/vB30zXZC/placeholder.png"
-                alt=""
-                class="img-fluid nav-item"
-              />
-            </a>
-          </div>
-          <div class="col-2">
+          
+          <div class="col-2 m-auto">
             <!-- Link to the top of the page -->
             <a href="#top">
               <i class="fa-solid fa-house fa-2xl" style="color: #ffffff"></i>
@@ -920,6 +917,10 @@
           </div>
         </div>
       </nav>
+<a name="bottom"></a>
+    </main>
+    <!-- Footer area of page -->
+    <footer>
       <!-- Bootstrap scripting links -->
       <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

@@ -65,6 +65,20 @@ body {
   width: 20rem;
   height: 25rem;
   text-align-last: auto;
+}
+
+#navLinks {
+  margin: auto;
+  padding: 0;
+  width: 6rem;
+  height: 3rem;
+  color: #ffffff;
+}
+
+#aboutLink {
+  width: 6rem;
+  height: 6rem;
+}
 
 #scroll {
   overflow-x: scroll;
