@@ -38,8 +38,9 @@ body {
   margin: 4rem auto;
 }
 
-#paragraph2 {
-  margin-top: 15rem;
+.br {
+  display: block;
+  margin: 0.5rem 0;
 }
 
 #scroll {
