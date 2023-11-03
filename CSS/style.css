@@ -2,11 +2,19 @@
 
 /* Color Pallete */
 :root {
-  --black: #000000ff;
-  --ebony: #5a6650ff;
-  --non-photo-blue: #a7e2e3ff;
-  --argentinian-blue: #73bafcff;
-  --white-smoke: #f6f5f5ff;
+  --text: #010400;
+  --background: #f42a74;
+  --accent: #6cefdd;
+  --primary: #92117d;
+  --secondary: #f6f5f5ff;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#pageHeadings {
+  padding-top: 6%;
 }
 
 #indexText {
@@ -19,12 +27,12 @@
 }
 
 .tab1 {
-  margin-left: 6rem;
+  margin-left: 4%;
   margin-right: 0;
 }
 
 .tab2 {
-  margin-left: 18rem;
+  margin-left: 10%;
   margin-right: 0;
 }
 
@@ -34,8 +42,52 @@
   margin: 4rem auto;
 }
 
-#paragraph2 {
-  margin-top: 15rem;
+.br {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+#reason {
+  height: 450px;
+}
+
+#skillsBlock {
+  margin: 0 auto;
+}
+
+#skillsNav a {
+  text-decoration: none;
+}
+
+#skillsGif {
+  width: 20rem;
+}
+
+#skillsBox {
+  border-radius: 30px;
+  border: solid 5px blue;
+  width: 20rem;
+  height: 25rem;
+  text-align-last: auto;
+}
+
+#skillsBlock {
+  border-radius: 30px;
+  border: double 10px blue;
+  margin-bottom: 3rem;
+}
+
+#navLinks {
+  margin: auto;
+  padding: 0;
+  width: 6rem;
+  height: 3rem;
+  color: #ffffff;
+}
+
+#aboutLink {
+  width: 6rem;
+  height: 6rem;
 }
 
 #scroll {
