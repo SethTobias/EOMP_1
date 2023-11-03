@@ -2,11 +2,11 @@
 
 /* Color Pallete */
 :root {
-  --black: #000000ff;
-  --ebony: #5a6650ff;
-  --non-photo-blue: #a7e2e3ff;
-  --argentinian-blue: #73bafcff;
-  --white-smoke: #f6f5f5ff;
+  --text: #010400;
+  --background: #f42a74;
+  --accent: #6cefdd;
+  --primary: #92117d;
+  --secondary: #f6f5f5ff;
 }
 
 body {
