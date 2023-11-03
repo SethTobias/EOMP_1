@@ -24,27 +24,32 @@
       src="https://kit.fontawesome.com/83bbb8d075.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
     <title>SethTobias_Portfolio</title>
   </head>
   <body>
       <!-- Bookmark to the top -->
       <a name="top"></a>
       <!-- Start of top nav bar -->
-      <nav class="container-fluid navbar-brand bg-dark sticky-top">
+      <nav class="container-fluid navbar-brand bg-dark sticky-top" id="navBackground">
         <div class="row container-fluid">
           <div class="col-sm-1 container-fluid img-fluid float-start">
             <a href="#about">
               <img
                 src="https://i.postimg.cc/FRjfYgn1/IMG-20220408-WA0002_2.jpg"
                 alt=""
-                class="img-fluid float-start rounded-circle"
+                class="img-fluid float-start rounded-circle "
                 id="aboutLink"
+                data-bs-toggle="tooltip" data-bs-placement="right" title="Link to my about page"
               />
             </a>
           </div>
 
-          <div class="col-6">
-            <div class="row m-auto mt-auto mb-auto">
+          <div class="col-6 m-auto">
+            <div class="row">
               <div class="col-4 text-center" id="navLinks">
                 <p>
                   <a href="#index">Index</a>
@@ -67,16 +72,22 @@
           </div>
           <div class="col-2 m-auto">
             <a href="#bottom">
-              <i class="fa-solid fa-arrow-down fa-xl" style="color: #ffffff;"></i>
+              <i 
+                  class="fa-solid fa-circle-chevron-down fa-2xl"
+                  data-bs-toggle="tooltip" 
+                  data-bs-placement="right" 
+                  title="Link to the bottom of my page"
+                  >
+                </i>
+              
             </a>
           </div>
         </div>
       </nav>
       <!-- End of top nav bar -->
-    <main class="container-fluid">
       <!-- Start of index page -->
       <section class="container-fluid m-3 border-bottom" id="index">
-        <a name="Index"></a>
+        <a name="Index"><h2 class="display-1 text-center" id="pageHeadings">Index</h2></a>
         <div class="row">
           <div class="col-4 d-block">
             <img
@@ -88,13 +99,13 @@
           <div class="col-8 row" id="indexText">
             <h1 class="indexText">
               <div class="row">
-                <div>I</div>
+                <div><span class="one">I</span></div>
               </div>
               <div class="row">
-                <div class="tab1">am</div>
+                <div class="tab1"><span class="two">a</span><span class="one">m</span> </div>
               </div>
               <div class="row">
-                <div class="tab2">Seth Tobias</div>
+                <div class="tab2"><span class="two">S</span><span class="one">e</span><span class="two">t</span><span class="one">h</span> <span class="two">T</span><span class="one">o</span><span class="two">b</span><span class="one">i</span><span class="two">a</span><span class="one">s</span></div>
               </div>
             </h1>
           </div>
@@ -103,30 +114,30 @@
       <!-- end of index page -->
       <!-- Start of about page -->
       <section class="container-fluid border-bottom" id="about">
-        <a name="about"></a>
+        <a name="about"><h2 class="display-1 text-center" id="pageHeadings">About</h2></a>
         <div class="container-fluid row">
-          <div class="col-4 container-fluid border mb-auto mt-auto">
+          <div class="col-4 container-fluid mb-auto mt-auto" id="aboutBorder">
             <div class="text-start">
-              <h3 class="text-start">Who am I?</h3>
+              <h3 class="text-start three">Who am I?</h3>
                 <span class="br">My name is Seth Tobias an aspiring developer.</span>
                 <span class="br">
                   I was born on the 27th of May and am currently 19 years old.
                 </span>
                 <span class="br">I am the Son of Donovan and Shantil Adams.</span>
-                <sapn class="br">I am the brother of 6 siblings.</sapn>
+                <span class="br">I am the brother of 6 siblings.</span>
                 <span class="br">
                   I am a very energetic person and love seeing people laugh.
                 </span>
                 <span class="br">
-                  I am a hopless romantic and have watched Five Feet Apart
+                  I am a hopeless romantic and have watched Five Feet Apart
                   several times over.
                 </span>
-                <span class="br">I am unapologeticly myself and wont change for anyone.</span>
+                <span class="br">I am unapologetically myself and won't change for anyone.</span>
 
                 <div class="text-start">
-                  <h3 class="">What do I aspire to be?</h3>
+                  <h3 class="one">What do I aspire to be?</h3>
                     <span class="br">
-                      I would one day like to be a succesful fullstack devloper.
+                      I would one day like to be a successful fullstack developer.
                     </span>
                     <span class="br">I would one day like to be a husband.</span>
                     <span class="br">I would one day like to be a father.</span>
@@ -134,9 +145,10 @@
             </div>
           </div>
           <div class="col-4">
-            <!-- Marquee like aniamtion1 -->
+            <!-- Marquee like animation1 -->
             <div class="row text-center" id="">
-              <h2>I am Seth Tobais</h2>
+              
+              <h2><span class="one">I </span><span class="two">a</span><span class="three">m </span><span class="one">S</span><span class="two">e</span><span class="three">t</span><span class="one">h</span> <span class="two">T</span><span class="three">o</span><span class="one">b</span><span class="two">i</span><span class="three">a</span><span class="one">s</span></h2>
             </div>
             <div class="row">
               <img
@@ -146,27 +158,27 @@
                 id="headshot2"
               />
             </div>
-            <!-- Marquee like aniamtion2 -->
+            <!-- Marquee like animation2 -->
             <div class="row text-center" id="">
-              <h2>An Aspiring Developer</h2>
+              <h2 class="">An Aspiring Developer</h2>
             </div>
           </div>
-          <div class="col-4 border mt-auto mb-auto">
+          <div class="col-4 mt-auto mb-auto" id="aboutBorder">
             <div class="text-end" id="">
-              <h3 class="text-end">What are my beliefs?</h3>
+              <h3 class="text-end one">What are my beliefs?</h3>
                 <span class="br">
                   I believe that everyone is capable of anything as long as they
-                  put thier minds to it.
+                  put their minds to it.
                 </span>
-                <span class="br">I beleive that everyone was born for a reason.</span>
-                <span class="br">I believe that the unknown is waiting to be dicovered.</sp>
-                <span class="br">I beleive together we can acomplish anytning.</span>
+                <span class="br">I believe that everyone was born for a reason.</span>
+                <span class="br">I believe that the unknown is waiting to be discovered.</sp>
+                <span class="br">I believe together we can accomplish anything.</span>
                 <span class="br">I believe that it will all work out in the end.</sp>
                 <span class="br">I believe in <span>myself.</span></span>
                 <span class="br">I believe...</span>
             </div>
             <div class="text-end" id="">
-              <h3 class="text-end">Why do I aspire to achieve?</h3>
+              <h3 class="text-end three">Why do I aspire to achieve?</h3>
                 <span class="br">I strive to overcome my past self.</span>
                 <span class="br">I strive to find my purpose in life.</span>
                 <span class="br">I strive to find the true meaning behind everything.</span>
@@ -185,7 +197,6 @@
             <a href="#CSS">CSS</a>
             <a href="#C">C</a>
             <a href="#Cpp">C++</a>
-            <a href="#Python">Python</a>
           </nav>
           <!-- Start of HTML -->
           <a name="HTML"></a>
@@ -200,7 +211,7 @@
             </div>
             <div class="col m-auto">
               <h3>Language Proficiency:Advanced</h3>
-              <p>As the first language I was exposed to, HTML is the language I am most comfortable and confident in. I strive to undertand as much as possible about the language. Throughout my journey I have learnt the limitations of having learnt HTML as my first language hever it will not hinder my learning journey.</p>
+              <p>As the first language I was exposed to, HTML is the language I am most comfortable and confident in. I strive to understand as much as possible about the language.</p>
             </div>
           </div>
           <!-- End of HTML -->
@@ -216,8 +227,8 @@
               />
             </div>
             <div class="col m-auto">
-              <h3>Language Proficiency:Intermidiate</h3>
-               <p>Followed by HTML was naturally CSS. At first my understanding was that CSS was just an extension of HTML. That CSS was just a smaller component of HTML. How wrong I was. CSS was a smaller component of something but not of HTML but Web Ddevelopment. I am well versed enough to understand many of th CSS properties. Even having the ability to learn my first frame work of bootstrap.</p>
+              <h3>Language Proficiency:Intermediate</h3>
+               <p>Followed by HTML was naturally CSS. At first my understanding was that CSS was just an extension of HTML. That CSS was just a smaller component of HTML. How wrong I was. CSS was a smaller component of something but not of HTML but Web Development. I am well versed enough to understand many of th CSS properties. Even having the ability to learn my first frame work of bootstrap.</p>
             </div>
           </div>
           <!-- End of CSS -->
@@ -234,7 +245,7 @@
             </div>
             <div class="col m-auto">
               <h3>Language Proficiency:Novice</h3>
-              Through my journey of self learning I came across C. The bridge between machine level languages and high level languages. My understanding of the language goes that far. Other than the basic interprentating of certain snippets of code. Programming is out of the question for now but ine day I strive to be well versed in the language.
+              Through my journey of self learning I came across C - the bridge between machine level languages and high level languages. I am familiar with the basic interpretation of certain snippets of code however I am not at a level where I can program using C. With that being said, one day I strive to be well versed in the language.
             </div>
           </div>
           <!-- End of C -->
@@ -251,7 +262,7 @@
             </div>
             <div class="col m-auto">
               <h3>Language Proficiency:Novice</h3>
-              Much like C my experience with C++ is much the same. Other than the fact taht C++ was where my journey lerning the trilogy of the C language started. My understanding of C++ is more advanced.
+              Much like C, my experience with C++ is limited but more advanced than C. C++ was where my journey learning the trilogy of the C languages started.
             </div>
           </div>
           <!-- End of C++ -->          
@@ -262,7 +273,7 @@
           <div class="row m-auto"></div>
           <div class="row">
             <div class="container mb-5" id="skillsBox">
-              <h4>Problem Sloving</h4>
+              <h4>Problem Solving</h4>
               <img
                 src="https://media.giphy.com/media/3orif0rjs49gsPWg1y/giphy.gif"
                 alt=""
@@ -270,8 +281,8 @@
                 id="skillsGif"
               />
               <p>
-                My ability to quckly and effeciently analyzea a problem and
-                formulate a possible solution is something i enjoy doing.
+                My ability to quickly and efficiently analyze a problem and
+                formulate a possible solution is something I am confident in.
               </p>
             </div>
             <div class="container mb-5" id="skillsBox">
@@ -283,13 +294,13 @@
                 id="skillsGif"
               />
               <p class="mt-5">
-                Talking to people is not a praoblem for me. I enjoy socializing
+                Talking to people is not a problem for me. I enjoy socializing
                 and getting to know people. Having a laugh with others is
-                somerthing I really enjoy.
+                something I really enjoy.
               </p>
             </div>
             <div class="container mb-5" id="skillsBox">
-              <h4>Adapability</h4>
+              <h4>Adaptability</h4>
               <img
                 src="https://media.giphy.com/media/D3y1KbfTrSuha/giphy.gif"
                 alt=""
@@ -297,8 +308,8 @@
                 id="skillsGif"
               />
               <p class="mt-5">
-                My energetic personality makes me very sutable for ever changing
-                environmanets.
+                My energetic personality makes me very suitable for ever changing
+                environments.
               </p>
             </div>
             <div class="container mb-5" id="skillsBox">
@@ -310,8 +321,8 @@
                 id="skillsGif"
               />
               <p class="mt-5">
-                COupled with my love for problem solving, this allows me to come
-                up with very intresting solutions to ceertain problems.
+                Coupled with my love for problem solving, this allows me to come
+                up with very interesting solutions to certain problems.
               </p>
             </div>
           </div>
@@ -347,7 +358,7 @@
       <!-- End of skills page -->
       <!-- Start of experience page -->
       <section class="container-fluid border-bottom" id="experience">
-        <a name="experience"></a>
+        <a name="experience"><h2 class="display-1 text-center" id="pageHeadings">Experience</h2></a>
         <div class="container-fluid">
           <table class="table table-hover table-responsive table-striped bg-info">
             <thead class="">
@@ -368,16 +379,16 @@
                   >
                     <thead>
                       <tr>
-                        <th>Subject<span class="text-end">Mark Achieved</span></th>
+                        <th>Subject<span class="float-end">Mark Achieved</span></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <tr>
-                          <td>Computer Applications:<span class="text-end">82%</span></td>
+                          <td>Computer Applications: <span class="float-end">82%</span></td>
                         </tr>
                         <tr>
-                          <td>Life Sciences:<span class="text-end">80%</span></td>
+                          <td>Life Sciences:<span class="float-end">80%</span></td>
                         </tr>
                       </tr>
                     </tbody>
@@ -434,89 +445,95 @@
       <!-- End of experience page -->
       <!-- Start of projects page-->
             <section class="container-fluid border-bottom" id="projects">
+              <a name="projects"><h2 class="display-1 text-center" id="pageHeadings">Projects</h2></a>
               <div class="row container-fluid ">
                 <div class="row">
                   <div class="container d-flex m-auto" id="scroll">
-                    <div>
-                      <div class="row">
-                      <img src="" alt="" class="img-fluid">
+                    <div class="col" id="scrollItem">
+                      <div class="row" id="scrollItem">
+                      <img src="https://i.postimg.cc/X7htx37v/Screenshot-2023-11-03-145940.png" alt="" class="img-fluid">
   
                       </div>
                       <div class="row">
                         <p class="text-center">Calculator</p>
                       </div>
                       <div class="row">
-                        <button type="button" class="btn btn-outline-dark">GitHub</button>
-                        <button type="button" class="btn btn-outline-info">Netlify</button>
-                        </div>
+                        <button type="button" class="btn btn-outline-dark"><a href="">GitHub</a></button>
+                        <button type="button" class="btn btn-outline-info mt-2"><a href="">Netlify</a></button>
                   </div>
-                    <div>
+                  </div>
+                    <div class="col" id="scrollItem">
                       <div class="row">
-                      <img src="" alt="" class="img-fluid">
+                      <img src="https://i.postimg.cc/65JcqSyS/Screenshot_2023-11-03_150050.png" alt="" class="img-fluid">
   
                       </div>
                       <div class="row">
                         <p class="text-center">Keyboard</p>
                       </div>
                       <div class="row">
-                        <button type="button" class="btn btn-outline-dark">GitHub</button>
-                        <button type="button" class="btn btn-outline-info">Netlify</button>
-                        </div>
+                        <button type="button" class="btn btn-outline-dark"><a href="">GitHub</a></button>
+                        <button type="button" class="btn btn-outline-info mt-2"><a href="">Netlify</a></button>
                   </div>
-                    <div>
+                  </div>
+                    <div class="col" id="scrollItem">
                       <div class="row">
-                      <img src="" alt="" class="img-fluid">
+                      <img src="https://i.postimg.cc/QNR45Cnf/image.png" alt="" class="img-fluid">
                         
                       </div>
                       <div class="row">
                         <p class="text-center">Netflix Clone</p>
                       </div>
                       <div class="row">
-                        <button type="button" class="btn btn-outline-dark">GitHub</button>
-                        <button type="button" class="btn btn-outline-info">Netlify</button>
-                        </div>
+                        <button type="button" class="btn btn-outline-dark"><a href="">GitHub</a></button>
+                        <button type="button" class="btn btn-outline-info mt-2"><a href="">Netlify</a></button>
                   </div>
-                    <div class="container">
+                  </div>
+                    <div class="col" id="scrollItem">
                       <div class="row">
-                      <img src="" alt="" class="img-fluid">
+                      <img src="https://i.postimg.cc/xdCyBV4k/Screenshot_2023-11-03_145329.png" alt="" class="img-fluid">
   
                       </div>
                       <div class="row">
                         <p class="text-center">MobiCare</p>
                       </div>
                       <div class="row">
-                        <button type="button" class="btn btn-outline-dark">GitHub</button>
-                        <button type="button" class="btn btn-outline-info">Netlify</button>
-                        </div>
+                        <button type="button" class="btn btn-outline-dark"><a href="">GitHub</a></button>
+                        <button type="button" class="btn btn-outline-info mt-2"><a href="">Netlify</a></button>
                   </div>
-                    <div>
-                      <div class="row ">
+                  </div>
+                  <div class="col" id="scrollItem">
+                    <div class="row">
                       <img src="https://i.postimg.cc/Y0f5xz77/Screenshot-2023-11-03-094539.png" alt="" class="">
-  
-                      </div>
-                      <div class="row">
-                        <p class="text-center">Ecommerce</p>
-                      </div>
-                      <div class="row d-flex">
-                        <button type="button" class="btn btn-outline-dark">GitHub</button>
-                        <button type="button" class="btn btn-outline-info mt-2">Netlify</button>
-                  </div>
-            
+                      
+                    </div>
+                    <div class="row">
+                      <p class="text-center">Ecommerce</p>
+                    </div>
+                    <div class="row">
+                      <button type="button" class="btn btn-outline-dark"><a href="">GitHub</a></button>
+                      <button type="button" class="btn btn-outline-info mt-2"><a href="">Netlify</a></button>
+                    </div>
+                    </div>
+                    
                 </div>
+                </div>
+                </div>
+                </div>
+                </section>
             <!-- End of projects page -->
             <!-- Start of testimonials page -->
             <section class="container-fluid border-bottom">
               <a name="testimonials"><h2 class="display-1 text-center" id="pageHeadings">Testimonials</h2></a>
-              <h2>Collegues</h2>
+              <h2>Colleagues</h2>
               <div class="row mt-5">
                 <div class="card m-auto" style="max-width: 540px;">
                   <div class="row g-0">
                     <div class="col-md-4">
-                      <img src="..." class="img-fluid rounded-start" alt="...">
+                      <img src="https://i.postimg.cc/1zjtHZS9/20231009-134048.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Seth is a charismatic and generous person, he connects with everyone in the room. He's analytical and provides help whenever he can. He's determined to achieve the best out of everyday and motivates those around him as well.</p>
                         <h5 class="card-title">-Tyheisha Johnson</h5>
                       </div>
                     </div>
@@ -529,7 +546,7 @@
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <p class="card-text">Seth Tobias is both kind and compassionate, the atmosphere that he brings into one's presence is calming and comforting. He has the ability to brighten anyone's day .Seth's work ethic and determination is admirable and inspirational
+                        <p class="card-text">Seth Tobias is both kind and compassionate. The atmosphere that he brings into one's presence is calming and comforting. He has the ability to brighten anyone's day. Seth's work ethic and determination is admirable and inspirational.
                           </p>
                         <h5 class="card-title">-Taryn-lee Walbrugh</h5>
                       </div>
@@ -555,11 +572,11 @@
                     <div class="card m-auto" style="max-width: 540px;">
                       <div class="row g-0">
                         <div class="col-md-4">
-                          <img src="" class="img-fluid rounded-start" alt="...">
+                          <img src="https://i.postimg.cc/HWvXjFR9/IMG-20230305-WA0010.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Seth is a very enthusiastic about life. Everything he talks about has life or character. He is like a sunflower, always blossoming.</p>
                             <h5 class="card-title">-Ntokozo Sithebe</h5>
                           </div>
                         </div>
@@ -568,12 +585,14 @@
                     <div class="card m-auto" style="max-width: 540px;">
                       <div class="row g-0">
                         <div class="col-md-4">
-                          <img src="" class="img-fluid rounded-start" alt="...">
+                          <img src="https://i.postimg.cc/FsqfLstQ/image.png" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <h5 class="card-title">-</h5>
+                            <p class="card-text">
+                              Seth Tobias always brings great energy to the team. He has solid attention to detail which is why he is often designated as our go-to debugger. He is self-driven and always go above and beyond with any task he's given.
+                            </p>
+                            <h5 class="card-title">-Naeema Omar</h5>
                           </div>
                         </div>
                       </div>
@@ -584,47 +603,48 @@
             <!-- End of testimonials page -->
             <!-- Start of contact page --->
       <section class="container-fluid border-bottom" id="contact">
-<a name="contact"></a>
-        <h1>How to get in contact?</h1>
-        <p>To reach me simply complete the below form or simply click on the icons below the form to take you to the respective pages.</p>
-        <div class="container m-auto">
-          <form action="" class="bg-info border-2 border-dark">
+        <a name="contact"><h2 class="display-1 text-center" id="pageHeadings">Contact</h2></a>
+        <h1 class="text-center">How to get in contact?</h1>
+        <p class="text-center">To reach me simply complete the below form or simply click on the icons below the form to take you to the respective pages.</p>
+        <div class="container-md m-auto">
+          <form action="https://formspree.io/f/mrgwdqov"
+          method="POST" class="bg-info border-2 border-dark">
             <div class="row m-auto p-3">
               <div class="form-floating col">
-                <input type="text" class="form-control" id="floatingInput" placeholder="First Name">
+                <input type="text" class="form-control" id="floatingInput" name="firstname">
                 <label for="floatingInput">First Name</label>
               </div>
               <div class="form-floating col">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Last Name">
+                <input type="text" class="form-control" id="floatingInput" name="lastname">
                 <label for="floatingInput">Last Name</label>
               </div>
             </div>
             <div class="row m-auto p-3">
               <div class="form-floating col-6 m-auto">
-                <input type="email" class="form-control" id="floatingInput" placeholder="yourEmail@gmail.com">
+                <input type="email" class="form-control" id="floatingInput" name="email">
                 <label for="floatingInput">Your Email Address</label>
               </div>
             </div>
             <div class="row m-auto p-3">
             <div class="form-floating m-auto col-8">
-              <input type="text" class="form-control" id="floatingInput reason" placeholder="I contacted you because...">
+              <input type="text" class="form-control" id="floatingInput reason" name="reason">
               <label for="floatingInput">Your reason for contacting?</label>
             </div>
             <div class="row">
               <div class="col">
                 <p class=" text-center m-0">Rate the responsiveness of this page out of 5. 0 being no responsiveness.</p>
                 <label for="customRange3" class="form-label"></label>
-                <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3">
+                <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3" name="responsiveness">
               </div>
               <div class="col">
-                <p class=" text-center m-0">Rate the professinoalism of this page out of 5. 0 being no professinoalism.</p>
+                <p class=" text-center m-0">Rate the professionalism of this page out of 5. 0 being no professionalism.</p>
                 <label for="customRange3" class="form-label"></label>
-                <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3">
+                <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3" name="professionalism ">
               </div>
               <div class="col">
-                <p class=" text-center m-0">Rate the asthetics of this page out of 5. 0 being extermly uplesant to llok at.</p>
+                <p class=" text-center m-0">Rate the aesthetic of this page out of 5. 0 being extremely unpleasant to look at.</p>
                 <label for="customRange3" class="form-label"></label>
-                <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3">
+                <input type="range" class="form-range" min="0" max="5" step="1" id="customRange3" name="aesthetic">
               </div>
             </div>
             <div class="row">
@@ -633,52 +653,54 @@
           </form>
           <div class="row m-auto
           mt-5">
-            <div class="col text-center">
-<i class="fa-brands fa-github fa-xl"></i>
-            </div>
-            <div class="col text-center">
-<i class="fa-brands fa-facebook fa-xl"></i>
-            </div>
-            <div class="col text-center">
-<i class="fa-brands fa-instagram fa-xl"></i>
-            </div>
-            <div class="col text-center">
-<i class="fa-brands fa-discord fa-xl"></i>
-            </div>
-            <div class="col text-center">
-<i class="fa-brands fa-linkedin fa-xl"></i>
-            </div>
-            <div class="col text-center">
-<i class="fa-brands fa-slack fa-xl"></i>
-            </div>
-            <div class="col text-center">
-<i class="fa-brands fa-google fa-xl"></i>
-            </div>
-            <div class="col text-center">
-<i class="fa-brands fa-youtube fa-xl"></i>
-            </div>
-            <div class="col text-center">
-<i class="fa-brands fa-pinterest fa-xl"></i>
-            </div>
-            <div class="col text-center">
-<i class="fa-brands fa-free-code-camp fa-xl"></i>
+          
+          <div class="col text-center">
+              <a href="https://github.com/SethTobias">
+              <i class="fa-brands fa-github fa-xl"></i>
+            </a>
             </div>
             
+            
+            <div class="col text-center">
+              <a href="">
+              <i class="fa-brands fa-discord fa-xl"></i>
+            </a>
+            </div>
+            
+            <div class="col text-center">
+                <a href="https://www.linkedin.com/in/seth-tobias-0480b0294/">
+                  <i class="fa-brands fa-linkedin fa-xl"></i>
+                </a>
+              </div>
+              
+              <div class="col text-center">
+                <a href="">
+                <i class="fa-brands fa-slack fa-xl"></i>
+              </a>
+            </div>
+            
+            <div class="col text-center">
+              <a href="mailto:seth.adams1107@gmail.com">
+                <i class="fa-brands fa-google fa-xl"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      </section>
+      </div>
+    </section>
       <!-- End of contact page -->
       <!-- Bottom navbar -->
-      <nav class="container-fluid navbar-brand bg-dark sticky-bottom">
+      <nav class="container-fluid navbar-brand sticky-bottom" id="navBackground">
         <div class="row container-fluid m-auto">
-          <div class="col-2 container-fluid text-danger">
+          <div class="col-2 container-fluid">
             <h4><span>Developed by </span><span>Seth Tobias</span></h4>
-            <h6>Icons by Icons8.</h6>
+            <h5>&COPY; All Rights Reserved 2023</h5>
+            <h6><a href="https://icons8.com/">Icons by Icons8.</a></h6>
           </div>
       
-          <div class="col-6">
-            <div class="row m-auto mt-auto mb-auto">
+          <div class="col-6 m-auto">
+            <div class="row">
               <div class="col-4 text-center" id="navLinks">
                 <p>
                   <a href="#projects">Projects</a>
@@ -703,7 +725,13 @@
           <div class="col-2 m-auto">
             <!-- Link to the top of the page -->
             <a href="#top">
-              <i class="fa-solid fa-house fa-2xl" style="color: #ffffff"></i>
+              <i 
+                  class="fa-solid fa-circle-chevron-up fa-2xl" 
+                  data-bs-toggle="tooltip" 
+                  data-bs-placement="right" 
+                  title="Link to the the of my page"
+                  >
+                </i>
             </a>
           </div>
         </div>
