@@ -92,6 +92,10 @@ body {
 
 #scroll {
   overflow-x: scroll;
+  overflow-y: hidden;
+  width: 80%;
+  height: 25rem;
+  margin: auto;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
